@@ -1,0 +1,63 @@
+:root {
+    --box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.445);
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #eab6fb !important;
+}
+input  {
+    border: none;
+    box-shadow: 0px 0px 4px rgba(116, 116, 116, 0.78) !important;
+}
+.output {
+    color: white;
+}
+input:focus, button:focus  {
+    outline: none;
+    box-shadow: 0px 0px 3px rgba(196, 204, 214, 0.78), 0px 0px 6px rgba(15, 102, 233, 0.78) !important;
+}
+button {
+    box-shadow: -1px 1px 2px rgba(80, 80, 80, 0.78) !important;
+}
+#App {
+    text-align: center;
+}
+.todo-app-body {
+    background: linear-gradient(to right, #6610f2, #d63384);max-width: 700px;
+    margin: 20% auto;
+    box-shadow: -2px 1px 20px rgb(0 0 0 / 78%);
+}
+.todo-item {
+    align-items: center;
+    box-shadow: 0px 0px 1px black;
+}
+form {
+    position: relative;
+}
+.cont {
+    max-width: 100% !important;
+}
+@media (min-width: 768px) {
+    .cont {
+            max-width: 65% !important;
+        }
+}
+form.cont input {
+    flex: 1;
+}
+
+.popup-holder {
+    background-color: rgba(0, 0, 0, 0.411);
+    box-shadow: var(--box-shadow);
+    width: fit-content !important;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    right: 30%;
+    z-index: 123;
+}
